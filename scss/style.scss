@@ -240,6 +240,7 @@ body {
 
     &__submit-button {
       width: 30%;
+      background-color: white;
       color: orangered;
       font-weight: bold;
     }
@@ -251,8 +252,12 @@ body {
       "linkedin pinterest"
       "twitter rss-feed";
 
-      img, p {
+      img, h4 {
         display: inline-block;
+      }
+
+      h4 {
+        vertical-align: 13px;
       }
 
       img {
