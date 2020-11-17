@@ -4,275 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <aside>
-        <div class="logo">
-          <h1>
-            SOME <br />
-            NAME
-          </h1>
+    <div class="container">
+      <header class="header">
+        <div class="title">
+          <h1>Fashionable</h1>
+          <span>Free PSD Website Template</span>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#about-me">ABOUT ME</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-      </aside>
-      <div class="main-container">
-        <section class="gallery">
-          <img src="https://picsum.photos/334/400?q=1" alt="image 1" />
-          <img src="https://picsum.photos/335/400?q=2" alt="image 2" />
-          <img src="https://picsum.photos/335/400?q=3" alt="image 3" />
-          <img src="https://picsum.photos/334/400?q=4" alt="image 4" />
-          <img src="https://picsum.photos/335/400?q=5" alt="image 5" />
-          <img src="https://picsum.photos/335/400?q=6" alt="image 6" />
-          <img src="https://picsum.photos/334/400?q=7" alt="image 7" />
-          <img src="https://picsum.photos/335/400?q=8" alt="image 8" />
-          <img src="https://picsum.photos/335/400?q=9" alt="image 9" />
-        </section>
-        <section class="carousel">
-          <span class="carousel__span"><<</span>
-          <span class="carousel__span carousel__span_active">1</span>
-          <span class="carousel__span">2</span>
-          <span class="carousel__span">3</span>
-          <span class="carousel__span">4</span>
-          <span class="carousel__span">>></span>
-        </section>
-
-        <section class="about-me" id="about-me">
-          <div class="about-me-container">
-            <h3 class="about-me-container__title">About Me</h3>
-            <p>
-              <img
-                src="https://picsum.photos/504/300?q=10"
-                alt="about-me-image"
-              />
-            </p>
-            <h3>My Name</h3>
-            <p class="about-me-container__describe">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              vel, consectetur a debitis tenetur, rem pariatur sit amet ipsum
-              maxime voluptatum repudiandae voluptas perspiciatis distinctio
-              corporis ex blanditiis porro numquam? Architecto, animi reiciendis
-              iusto commodi fugit alias ratione incidunt similique quia, sequi
-              accusamus impedit eum aperiam! Beatae, dolorum eveniet adipisci
-              sint veniam sed vitae voluptas et reiciendis eaque cupiditate
-              rerum! Ipsam quod impedit minus ratione porro, aspernatur veniam
-              esse harum dolore quaerat, ut qui totam. Alias, recusandae tempora
-              laborum soluta consequatur rerum consequuntur eligendi corporis
-              architecto, excepturi voluptatem quaerat reprehenderit!
-            </p>
-            <p>mail: example@example.com</p>
-            <p>tel: 5353 35531</p>
-            <div class="horizontal-line"></div>
-            <h3>Technical Skills</h3>
-            <h4 class="about-me-container__skill-name">Photography</h4>
-            <progress value="95" max="100" data-label="95%"></progress>
-            <h4 class="about-me-container__skill-name">Web Design</h4>
-            <progress value="85" max="100" data-label="85%"></progress>
-            <h4 class="about-me-container__skill-name">Photoshop</h4>
-            <progress value="80" max="100" data-label="80%"></progress>
-            <button type="button" class="about-me-container__resume-button">Download Resume</button>
-            <div class="horizontal-line"></div>
-            <h3>How much I charge</h3>
-            <div class="prices-container">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="table__head"><h3>Basic</h3></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="table__cell">Web Design</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell">Photography</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell">5GB Storage</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell">Mail Support</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell table__cell_price">
-                      <h1>$ 10</h1>
-                      <span>per month</span>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td class="table__cell table__cell_sign-up">
-                      <button class="sign-up">Sign Up</button>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="table__head"><h3>Pro</h3></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="table__cell">Web Design</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell">Photography</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell">50GB Storage</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell">Endless Support</td>
-                  </tr>
-                  <tr>
-                    <td class="table__cell table__cell_price">
-                      <h1>$ 25</h1>
-                      <span>per month</span>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td class="table__cell table__cell_sign-up">
-                      <button class="sign-up">Sign Up</button>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-          </div>
-        </section>
-
-        <address id="contact">
-          <div class="contact-me-container">
-            <h2>Contact Me</h2>
-            <form>
-              <p>
-                Do you want me to photograph you? Fill out the form and fill me
-                in with the details :) I love meeting new people!
-              </p>
-              <p>
-                <label for="name" class="contact-me-container__element"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  name="name"
-                  class="contact-me-container__element contact-me-container__input"
-                />
-              </p>
-              <p>
-                <label for="email" class="contact-me-container__element"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  name="email"
-                  class="contact-me-container__element contact-me-container__input"
-                />
-              </p>
-              <p>
-                <label for="message" class="contact-me-container__element">
-                  Message
-                </label>
-                <input
-                  type="text"
-                  name="message"
-                  class="contact-me-container__element contact-me-container__input"
-                />
-              </p>
-              <p>
-                <button
-                  type="submit"
-                  class="contact-me-container__element contact-me-container__button"
-                >
-                  Send Message
-                </button>
-              </p>
-            </form>
-          </div>
-        </address>
-        <footer>
-          <section class="info">
-            <h3>INFO</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui
-              placeat repudiandae pariatur veniam voluptatibus iste aspernatur
-              neque harum libero!
-            </p>
-          </section>
-          <section class="blog-posts">
-            <h3>BLOG POSTS</h3>
-            <div class="blog-post-container">
-              <div class="blog-link">
-                <img
-                  src="https://picsum.photos/50/50?q=11"
-                  alt="lorem blog link"
-                  class="blog-link__img"
-                />
-                <div class="blog-link-text-container">
-                  <span
-                    class="blog-link-text-container__span blog-link-text-container__span_link-title"
-                    >Lorem</span
-                  >
-                  <span class="blog-link-text-container__span"
-                    >Sed mattis nunc</span
-                  >
-                </div>
-              </div>
-              <div class="horizontal-line"></div>
-              <div class="blog-link">
-                <img
-                  src="https://picsum.photos/50/50?q=12"
-                  alt="ipsum blog link"
-                  class="blog-link__img"
-                />
-                <div class="blog-link-text-container">
-                  <span
-                    class="blog-link-text-container__span blog-link-text-container__span_link-title"
-                    >Ipsum</span
-                  >
-                  <span class="blog-link-text-container__span"
-                    >Praes tinci sed</span
-                  >
-                </div>
-              </div>
+        <div class="nav-container">
+          <nav class="nav">
+            <div class="nav-link-wrapper">
+              <a href="#homepage" class="nav__link">HOMEPAGE</a>
             </div>
-          </section>
-          <section class="popular-tags">
-            <h3>POPULAR TAGS</h3>
-            <span class="popular-tags__span popular-tags__span_active"
-              >Travel</span
-            >
-            <span class="popular-tags__span">New York</span>
-            <span class="popular-tags__span">London</span>
-            <span class="popular-tags__span">IKEA</span>
-            <span class="popular-tags__span">NORWAY</span>
-            <span class="popular-tags__span">DIY</span>
-            <span class="popular-tags__span">Ideas</span>
-            <span class="popular-tags__span">Baby</span>
-            <span class="popular-tags__span">Family</span>
-            <span class="popular-tags__span">News</span>
-            <span class="popular-tags__span">Clothing</span>
-            <span class="popular-tags__span">Shopping</span>
-            <span class="popular-tags__span">Sports</span>
-            <span class="popular-tags__span">Games</span>
-          </section>
-        </footer>
-      </div>
-    </main>
+            <div class="nav-link-wrapper">
+              <a href="#style-demo" class="nav__link">STYLE DEMO</a>
+            </div>
+            <div class="nav-link-wrapper">
+              <a href="#full-width" class="nav__link">FULL WIDTH</a>
+            </div>
+            <div class="nav-link-wrapper">
+              <a href="#dropdown" class="nav__link">DROPDOWN</a>
+            </div>
+            <div class="nav-link-wrapper">
+              <a href="#link-text" class="nav__link">LINK TEXT</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="slide">
+          <img
+            src="https://picsum.photos/954/500?q=1"
+            alt="slide-caption"
+            class="slide__image"
+          />
+          <div class="opacity-caption">
+            <h2>Slide 1 Caption</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+              itaque optio nihil quidem magnam maiores iusto commodi, dolores
+              incidunt at velit possimus corrupti autem officiis excepturi eum
+              necessitatibus facilis cumque.
+            </p>
+          </div>
+          <div class="bullets-container">
+            <div class="bullets-container__bullet"></div>
+            <div class="bullets-container__bullet"></div>
+            <div class="bullets-container__bullet"></div>
+            <div class="bullets-container__bullet"></div>
+            <div
+              class="bullets-container__bullet bullets-container__bullet_transparent"
+            ></div>
+          </div>
+        </section>
+        <section class="cards">
+          <div class="card">
+            <h1 class="card__header">Indonectetus facilis</h1>
+            <img
+              src="https://picsum.photos/280/280?q=2"
+              alt="card 1 image"
+              class="card__image"
+            />
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              delectus quam molestiae necessitatibus deleniti aut veniam
+              aspernatur exercitationem, ex aliquid?
+            </p>
+            <p class="card__paragraph">
+              Illo possimus necessitatibus iste excepturi consequuntur! Et
+              pariatur aperiam laudantium, nam accusantium atque totam ipsum.
+              Dolorum quos officiis corrupti molestias?
+            </p>
+            <span class="card__span"><a href="#continue-reading" class="card__link">Continue Reading >></a></span>
+          </div>
+          <div class="card">
+            <h1 class="card__header">Indonectetus facilis</h1>
+            <img
+              src="https://picsum.photos/280/280?q=3"
+              alt="card 2 image"
+              class="card__image"
+            />
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              delectus quam molestiae necessitatibus deleniti aut veniam
+              aspernatur exercitationem, ex aliquid?
+            </p>
+            <p class="card__paragraph">
+              Illo possimus necessitatibus iste excepturi consequuntur! Et
+              pariatur aperiam laudantium, nam accusantium atque totam ipsum.
+              Dolorum quos officiis corrupti molestias?
+            </p>
+            <span class="card__span"><a href="#continue-reading" class="card__link">Continue Reading >></a></span>
+          </div>
+          <div class="card">
+            <h1 class="card__header">Indonectetus facilis</h1>
+            <img
+              src="https://picsum.photos/280/280?q=4"
+              alt="card 3 image"
+              class="card__image"
+            />
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              delectus quam molestiae necessitatibus deleniti aut veniam
+              aspernatur exercitationem, ex aliquid?
+            </p>
+            <p class="card__paragraph">
+              Illo possimus necessitatibus iste excepturi consequuntur! Et
+              pariatur aperiam laudantium, nam accusantium atque totam ipsum.
+              Dolorum quos officiis corrupti molestias?
+            </p>
+            <span class="card__span"><a href="#continue-reading" class="card__link">Continue Reading >></a></span>
+          </div>
+        </section>
+        <section class="gallery"></section>
+        <section class="social-media"></section>
+      </main>
+      <footer class="footer">
+        <span class="footer__span footer__span_left"
+          >Copyright © 2013 Domain Name - All Rights Reserved</span
+        >
+        <span class="footer__span footer__span_right"
+          >Template by OS Templates</span
+        >
+      </footer>
+    </div>
   </body>
 </html>

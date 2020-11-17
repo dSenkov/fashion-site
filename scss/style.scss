@@ -1,272 +1,160 @@
-$font-family: "Nunito", sans-serif;
-$body-main-color: #f5f5f5;
-
-@mixin flex($direction: column, $justify: center) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-}
+$font-family: "Alegreya SC", serif;
+$font-color: #686868;
+$common-padding: 20px 20px;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background-color: $body-main-color;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: black;
   font-family: $font-family;
 }
 
-main {
-  width: 85vw;
-  margin: 0 auto;
-  @include flex(row, flex-start);
+.container {
+  width: 70vw;
+  background-color: #DCDCDC;
+  color: $font-color;
+
+  display: grid;
+  grid-template-rows: 120px 1fr 65px;
 }
 
-aside {
-  width: 15vw;
-  text-align: center;
-  background: white;
-  color: #bebebe;
+.header {
+  background-color: white;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
-  .logo {
-    margin-top: 80px;
-    font-size: smaller;
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 60px;
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    li {
-      margin-bottom: 10px;
+  .nav {
+    height: 70%;
+    cursor: pointer;
+    background-color: #303030;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-      a {
-        text-decoration: none;
-        color: #bebebe;
-        font-size: smaller;
+    &-link-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: #b0b0b0;
       }
     }
   }
 }
 
-.main-container {
-  width: 70vw;
-  @include flex($justify: flex-start);
-}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.gallery {
-  @include flex(row, flex-start);
-  flex-wrap: wrap;
-}
+  padding: 40px 27px 0 27px;
 
-.carousel {
-  @include flex($direction: row);
-  align-items: center;
-  height: 70px;
-  font-size: smaller;
-
-  &__span {
-    margin: 0 15px;
-
-    &_active {
-      background: black;
-      color: $body-main-color;
-      padding: 8px 15px;
-      margin: 0 0;
+  .slide {
+    display: flex;
+    justify-content: center;
+    
+    &_image {
+      position: relative;
     }
   }
-}
 
-section.about-me {
-  @include flex(row, flex-start);
-  background: #686868;
-  color: #d3d3d3;
-}
-
-.about-me-container {
-  @include flex();
-  max-width: 50%;
-  margin: 30px auto;
-
-  &__title {
-    text-align: center;
-  }
-
-  &__describe {
-    font-size: small;
-    text-align: justify;
-  }
-
-  &__skill-name {
-    width: 25%;
-    letter-spacing: 3px;
-  }
-
-  &__resume-button {
-    height: 40px;
-    width: 150px;
-    border: none;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    background-color: $body-main-color;
-    font-family: $font-family;
-  }
-}
-
-progress {
-  width: 100%;
-  height: 30px;
-  -webkit-appearance: none;
-  position: relative;
-
-  &::-webkit-progress-bar {
-    background-color: white;
-    border-radius: 0px;
-  }
-
-  &::-moz-progress-bar {
-    background-color: #d3d3d3;
-  }
-
-  &::-webkit-progress-value {
-    background-color: #d3d3d3;
-  }
-
-  &::before {
-    content: attr(data-label);
-    font-size: medium;
-    color: black;
-
+  .opacity-caption {
+    background-color: #00000073;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
     position: absolute;
-    top: 5px;
-    left: 220px;
-  }
-}
-
-.horizontal-line {
-  height: 0px;
-  border-top: 1px solid #d3d3d3;
-  margin: 20px 0;
-}
-
-.prices-container {
-  @include flex(row, space-between);
-}
-
-.table {
-  width: 49%;
-  text-align: center;
-
-  &__head {
-    width: 60px;
-    height: 80px;
-    background-color: black;
-    color: #686868;
+    top: 440px;
+    left: 265px;
+    width: 440px;
   }
 
-  &__cell {
-    height: 50px;
-    background-color: #dcdcdc;
-    border-bottom: 1px solid #686868;
-    color: #686868;
+  .bullets-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    width: 70px;
+    position: absolute;
+    top: 170px;
+    right: 250px;
+    
+    &__bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
 
-    &_price {
-      height: 120px;
-      @include flex();
-    }
-
-    &_sign-up {
-      height: 100px;
-      background-color: #c0c0c0;
+      &_transparent {
+        border: 2px solid white;
+        background-color: #00000000;
+      }
     }
   }
-}
 
-button.sign-up {
-  background-color: #dcdcdc;
-  border: none;
-  width: 100px;
-  height: 50px;
-  font-family: $font-family;
-  font-size: medium;
-  color: #686868;
-}
+  .cards {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
 
-address {
-  font-style: normal;
-}
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-.contact-me-container {
-  @include flex();
-  align-items: center;
-  max-width: 50%;
-  margin: 25px auto;
+      &__paragraph, &__span {
+        font-size: smaller;
+      }
 
-  &__element {
-    display: block;
-    width: 100%;
-  }
-
-  &__input {
-    height: 35px;
-  }
-
-  &__button {
-    background-color: black;
-    color: $body-main-color;
-    height: 35px;
-    font-size: medium;
-    font-family: $font-family;
+      &__link {
+        text-decoration: none;
+        color: orangered;
+      }
+    }
   }
 }
 
-footer {
-  @include flex(row, space-between);
-  background: #a9a9a9;
-  padding: 30px 10px;
+.footer {
+  border-top: 1px solid red;
+  padding: $common-padding;
+  display: grid;
+  grid-template-areas: "left right";
 
-  section {
-    width: 33%;
-    padding: 5px;
-  }
-}
-
-.blog-posts-container {
-  @include flex();
-}
-
-.blog-link {
-  @include flex(row, flex-start);
-
-  &__img {
-    margin: auto 10px;
-  }
-}
-
-.blog-link-text-container {
   &__span {
-    display: block;
+    display: inline-block;
 
-    &_link-title {
-      font-size: larger;
+    &_left {
+      grid-area: left;
+      justify-self: start;
     }
-  }
-}
 
-.popular-tags {
-  &__span {
-    font-size: smaller;
-    background-color: #686868;
-    color: #f5f5f5;
-    padding: 0px 4px;
-
-    &_active {
-      background-color: black;
-      font-size: small;
-      color: $body-main-color;
-      padding: 2px 6px;
+    &_right {
+      grid-area: right;
+      justify-self: end;
     }
   }
 }
