@@ -8,19 +8,20 @@ $common-padding: 20px 20px;
 
 @mixin orange-link() {
   text-decoration: none;
-  color: orangered;
+  color: #ff4500;
 }
 
 body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #000;
   font-family: $font-family;
 }
 
 .container {
   width: 70vw;
+  max-width: 1008px;
   background-color: #dcdcdc;
   color: $font-color;
 
@@ -29,7 +30,7 @@ body {
 }
 
 .header {
-  background-color: white;
+  background-color: #ffffff;
   padding: 20px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -62,7 +63,7 @@ body {
 
     &__link {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       &:hover {
         color: #b0b0b0;
       }
@@ -80,20 +81,17 @@ body {
   .slide {
     display: flex;
     justify-content: center;
-
-    &_image {
-      position: relative;
-    }
+    position: relative;
   }
 
   .opacity-caption {
     background-color: #00000073;
-    color: white;
+    color: #ffffff;
     padding-left: 25px;
     padding-right: 25px;
     position: absolute;
-    top: 440px;
-    left: 265px;
+    bottom: 20px;
+    left: 48px;
     width: 440px;
   }
 
@@ -103,17 +101,17 @@ body {
     grid-gap: 2px;
     width: 70px;
     position: absolute;
-    top: 170px;
-    right: 250px;
+    top: 15px;
+    right: 40px;
 
     &__bullet {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: white;
+      background-color: #ffffff;
 
-      &_transparent {
-        border: 2px solid white;
+      &:hover {
+        border: 2px solid #ffffff;
         background-color: #00000000;
       }
     }
@@ -196,6 +194,10 @@ body {
   display: flex;
   justify-content: space-between;
 
+  h3 {
+    font-style: italic;
+  }
+
   p,
   span {
     font-size: smaller;
@@ -240,8 +242,8 @@ body {
 
     &__submit-button {
       width: 30%;
-      background-color: white;
-      color: orangered;
+      background-color: #ffffff;
+      color: #ff4500;
       font-weight: bold;
     }
   }
@@ -252,34 +254,35 @@ body {
       "linkedin pinterest"
       "twitter rss-feed";
 
-      img, h4 {
-        display: inline-block;
-      }
+    img,
+    h4 {
+      display: inline-block;
+    }
 
-      h4 {
-        vertical-align: 13px;
-      }
+    h4 {
+      vertical-align: 13px;
+    }
 
-      img {
-        width: 35px;
-        height: 35px;
-      }
+    img {
+      width: 35px;
+      height: 35px;
+    }
 
-      &__linkedin {
-        grid-area: linkedin;
-      }
+    &__linkedin {
+      grid-area: linkedin;
+    }
 
-      &__pinterest {
-        grid-area: pinterest;
-      }
+    &__pinterest {
+      grid-area: pinterest;
+    }
 
-      &__twitter {
-        grid-area: twitter;
-      }
+    &__twitter {
+      grid-area: twitter;
+    }
 
-      &__rss-feed {
-        grid-area: rss-feed;
-      }
+    &__rss-feed {
+      grid-area: rss-feed;
+    }
   }
 }
 
