@@ -52,7 +52,7 @@ body {
     background-color: #303030;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
 
     &-link-wrapper {
       display: flex;
@@ -97,7 +97,7 @@ body {
 
   .bullets-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 2px;
     width: 70px;
     position: absolute;
@@ -120,7 +120,7 @@ body {
   .cards {
     margin: 25px 27px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 
     .card {
