@@ -141,48 +141,35 @@ body {
 }
 
 .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 27px 40px 27px;
+
+  &__header {
+    margin-top: 8px;
+  }
 
   &-grid {
     display: grid;
-    grid-template-areas:
-      "main one two three"
-      "main four five six";
-    grid-gap: 5px;
+    grid-template-columns: repeat(8, 115px);
+    grid-template-rows: repeat(2, 115px);
+    grid-row-gap: 8px;
+    grid-column-gap: 4px;
 
     &__main {
-      grid-area: main;
-      justify-self: start;
+      grid-row: 1/3;
+      grid-column: 1/6;
+
+      margin-right: 17px;
+      
+      width: 574px;
+      height: 238px;
     }
-    &__one {
-      grid-area: one;
-      justify-self: center;
-      align-self: start;
-    }
-    &__two {
-      grid-area: two;
-      justify-self: center;
-      align-self: start;
-    }
-    &__three {
-      grid-area: three;
-      justify-self: center;
-      align-self: start;
-    }
-    &__four {
-      grid-area: four;
-      justify-self: center;
-      align-self: end;
-    }
-    &__five {
-      grid-area: five;
-      justify-self: center;
-      align-self: end;
-    }
-    &__six {
-      grid-area: six;
-      justify-self: center;
-      align-self: end;
+
+    &__small {
+      width: 115px;
+      height: 115px;
     }
   }
 }
